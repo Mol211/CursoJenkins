@@ -1,0 +1,15 @@
+pipeline
+{
+  agent any
+  stages
+  {
+    stage("UAT")
+    {
+      steps
+        {
+        echo "hola que tal como estás"
+        }
+    }
+
+  }
+}
