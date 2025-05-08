@@ -1,0 +1,15 @@
+pipeline{
+  agent any
+  stages{
+    stage('Version de Java') {
+      steps{
+        bat 'java --version'
+      }
+    }
+    stage('Version de Git') {
+      steps {
+        bat 'git --version'
+      }
+    }
+  }
+}
